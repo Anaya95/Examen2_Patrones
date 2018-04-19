@@ -57,7 +57,7 @@ public class Cliente {
 	}
     
     
-    public void addRental(Alquiler arg) {
+    /*public void addRental(Alquiler arg) {
     	alquileres.add(arg);
     }
     public static Cliente get(String name) {
@@ -65,6 +65,6 @@ public class Cliente {
     }
     public void persist() {
     	Registrar.add("Clientes", this);
-    }
+    }*/
     private ArrayList<Alquiler> alquileres= new ArrayList<>();
 }

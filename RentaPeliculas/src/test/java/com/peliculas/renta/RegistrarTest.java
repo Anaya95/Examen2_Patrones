@@ -7,16 +7,16 @@ import org.junit.Test;
 public class RegistrarTest {
 
 	@Test
-	public void testAdd1() {
+	public void testAddPelicula() {
 		Pelicula peli = new Pelicula("Terminator",0);
-		Registrar.add("Peliculas", peli);
-		assertEquals(Registrar.get("Peliculas","Terminator"),peli);
+		Registrar.addPelicula("Peliculas", peli);
+		assertEquals(Registrar.getPelicula("Terminator"),peli);
 	}
 	
 	@Test
-	public void testAdd2() {
+	public void testAddCliente() {
 		Cliente cliente = new Cliente("Erick Anaya");
-		Registrar.add("Clientes", cliente);
-		assertEquals(Registrar.get("Clientes","Erick Anaya"),cliente);
+		Registrar.addCliente("Clientes", cliente);
+		assertEquals(Registrar.getCliente("Erick Anaya"),cliente);
 	}
 }
