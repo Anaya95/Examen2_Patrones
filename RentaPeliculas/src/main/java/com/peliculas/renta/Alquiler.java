@@ -1,20 +1,18 @@
 package com.peliculas.renta;
 
 public class Alquiler {
-    private Disco disco;
+    private Pelicula peli;
     private int diasAlquilado;
-	
-	public int getDiasAlquilado() {
-    	return diasAlquilado;
-    }
-    public Disco getDisco() {
-    	return disco;
-    }
     
-    public Alquiler(Disco pDisco, int pDiasAlquilado) {
-    	disco = pDisco;
+    public Alquiler(Pelicula peli, int pDiasAlquilado) {
+    	this.peli = peli;
     	diasAlquilado = pDiasAlquilado;
     }
     
-
+    public int getDiasAlquilado() {
+    	return diasAlquilado;
+    }
+    public Pelicula getPelicula() {
+    	return peli;
+    }
 }

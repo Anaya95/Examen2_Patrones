@@ -17,13 +17,13 @@ public class Pelicula {
 			return codigoPrecio;
 		}
 
-		public void persist() {
+		/*public void persist() {
 			Registrar.add ("Movies", this);
 		}
 
 		public static Pelicula get(String name) {
 			return (Pelicula) Registrar.get ("Peliculas", name);
-		}
+		}*/
 
 		public String getNombre() {
 			return nombre;

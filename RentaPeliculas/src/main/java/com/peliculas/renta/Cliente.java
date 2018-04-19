@@ -20,7 +20,7 @@ public class Cliente {
             Alquiler alquiler = iterator.next();
 
             //determine amounts for each line
-            switch (alquiler.getDisco().getPelicula().getCodigoPrecio()) {
+            switch (alquiler.getPelicula().getCodigoPrecio()) {
                 case Pelicula.NORMAL:
                     montoAlquiler += 2;
                     if (alquiler.getDiasAlquilado() > 2)
@@ -40,10 +40,10 @@ public class Cliente {
 
             puntosAlquilerFrecuente ++;
             // agregar bono por alquiler de pelicula "estreno"
-            if ((alquiler.getDisco().getPelicula().getCodigoPrecio() == Pelicula.ESTRENO) && alquiler.getDiasAlquilado() > 1) puntosAlquilerFrecuente ++;
+            if ((alquiler.getPelicula().getCodigoPrecio() == Pelicula.ESTRENO) && alquiler.getDiasAlquilado() > 1) puntosAlquilerFrecuente ++;
 
             //mostrar datos
-            result += "\t" + alquiler.getDisco().getPelicula().getNombre()+ "\t" + String.valueOf(montoAlquiler) + "\n";
+            result += "\t" + alquiler.getPelicula().getNombre()+ "\t" + String.valueOf(montoAlquiler) + "\n";
 
         }
         //fin del reporte
