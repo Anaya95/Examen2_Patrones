@@ -11,7 +11,7 @@ public class ClienteTest {
 		Cliente cliente = new Cliente("Erick Anaya");
 		Pelicula peli1 = new Pelicula("Terminator",0);
 		Pelicula peli2 = new Pelicula("Los Pitufos",2);
-		Pelicula peli3 = new Pelicula("Gigantes del pacífico 2",1);
+		Pelicula peli3 = new Pelicula("Titanes del pacífico 2",1);
 		Disco disc1 = new Disco("x",peli1);
 		Disco disc2 = new Disco("xx",peli2);
 		Disco disc3 = new Disco("xxx",peli3);

@@ -6,24 +6,16 @@ public class Pelicula {
 	    public static final int  ESTRENO = 1;
 
 	    private String nombre; 
-		private int codigoPrecio;
+		private int tipoCobro;
 
-		public Pelicula(String pNombre, int pCodigoPrecio) {
-			setNombre(pNombre);
-			codigoPrecio = pCodigoPrecio;
+		public Pelicula(String nombre, int tipoCobro) {
+			this.nombre = nombre;
+			this.tipoCobro = tipoCobro;
 		}
 
-		public int getCodigoPrecio() {
-			return codigoPrecio;
+		public int getTipoCobro() {
+			return tipoCobro;
 		}
-
-		/*public void persist() {
-			Registrar.add ("Movies", this);
-		}
-
-		public static Pelicula get(String name) {
-			return (Pelicula) Registrar.get ("Peliculas", name);
-		}*/
 
 		public String getNombre() {
 			return nombre;

@@ -16,13 +16,11 @@ public class Registrar {
 		
 	}
 	
-	public static void addPelicula(String coleccion, Object objeto) {
-		Pelicula nuevaPelicula = (Pelicula) objeto;
-		peliculas.put(nuevaPelicula.getNombre(), nuevaPelicula);
+	public static void addPelicula(Pelicula pelicula) {
+		peliculas.put(pelicula.getNombre(), pelicula);
 	}
 	
-	public static void addCliente(String coleccion, Object objeto) {
-		Cliente nuevoCliente = (Cliente) objeto;
-		clientes.put(nuevoCliente.getNombre(), nuevoCliente);
+	public static void addCliente(Cliente cliente) {
+		clientes.put(cliente.getNombre(), cliente);
 	}
 }
